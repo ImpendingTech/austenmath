@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>EG3083 Maths Practice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+            options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1>EG3083</h1>
+            <p class="subtitle">Maths for Engineering &amp; Science</p>
+        </div>
+    </header>
+
+    <nav id="topicNav">
+        <div class="nav-scroll">
+            <button class="nav-btn active" data-topic="home">Home</button>
+            <button class="nav-btn" data-topic="algebra">Algebra</button>
+            <button class="nav-btn" data-topic="logarithms">Logs &amp; Trig</button>
+            <button class="nav-btn" data-topic="matrices">Matrices</button>
+            <button class="nav-btn" data-topic="vectors">Vectors</button>
+            <button class="nav-btn" data-topic="statistics">Statistics</button>
+            <button class="nav-btn" data-topic="differentiation">Differentiation</button>
+            <button class="nav-btn" data-topic="integration">Integration</button>
+            <button class="nav-btn" data-topic="maxmin">Max &amp; Min</button>
+            <button class="nav-btn" data-topic="complex">Complex Numbers</button>
+            <button class="nav-btn" data-topic="engineering">Engineering Apps</button>
+        </div>
+    </nav>
+
+    <main id="content">
+        <section id="home" class="topic-section active">
+            <div class="card welcome-card">
+                <h2>Welcome!</h2>
+                <p>Practice the key maths topics from EG3083. Each section has:</p>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <span class="feature-icon">📖</span>
+                        <strong>Theory</strong>
+                        <p>Key concepts and formulas</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✏️</span>
+                        <strong>Worked Examples</strong>
+                        <p>Step-by-step solutions</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🎯</span>
+                        <strong>Practice</strong>
+                        <p>Randomised problems with instant feedback</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-grid">
+                <button class="topic-card" data-goto="algebra">
+                    <span class="topic-num">1</span>
+                    <span class="topic-name">Algebra</span>
+                    <span class="topic-desc">Expanding, simplifying, quadratics, binomial</span>
+                </button>
+                <button class="topic-card" data-goto="logarithms">
+                    <span class="topic-num">2</span>
+                    <span class="topic-name">Logs &amp; Trig Identities</span>
+                    <span class="topic-desc">Log equations, harmonic form, limits</span>
+                </button>
+                <button class="topic-card" data-goto="matrices">
+                    <span class="topic-num">3</span>
+                    <span class="topic-name">Matrices</span>
+                    <span class="topic-desc">Arithmetic, multiplication, determinant, inverse</span>
+                </button>
+                <button class="topic-card" data-goto="vectors">
+                    <span class="topic-num">4</span>
+                    <span class="topic-name">Vectors</span>
+                    <span class="topic-desc">Components, addition, cross product, 3D</span>
+                </button>
+                <button class="topic-card" data-goto="statistics">
+                    <span class="topic-num">5</span>
+                    <span class="topic-name">Statistics</span>
+                    <span class="topic-desc">Mean, standard deviation, histograms</span>
+                </button>
+                <button class="topic-card" data-goto="differentiation">
+                    <span class="topic-num">6</span>
+                    <span class="topic-name">Differentiation</span>
+                    <span class="topic-desc">Product rule, chain rule, gradients</span>
+                </button>
+                <button class="topic-card" data-goto="integration">
+                    <span class="topic-num">7</span>
+                    <span class="topic-name">Integration</span>
+                    <span class="topic-desc">Definite integrals, by parts, trig</span>
+                </button>
+                <button class="topic-card" data-goto="maxmin">
+                    <span class="topic-num">8</span>
+                    <span class="topic-name">Max &amp; Min</span>
+                    <span class="topic-desc">Turning points, intersections</span>
+                </button>
+                <button class="topic-card" data-goto="complex">
+                    <span class="topic-num">9</span>
+                    <span class="topic-name">Complex Numbers</span>
+                    <span class="topic-desc">Arithmetic, division, modulus</span>
+                </button>
+                <button class="topic-card" data-goto="engineering">
+                    <span class="topic-num">10</span>
+                    <span class="topic-name">Engineering Apps</span>
+                    <span class="topic-desc">Volumes, bearings, surveying</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="algebra" class="topic-section"></section>
+        <section id="logarithms" class="topic-section"></section>
+        <section id="matrices" class="topic-section"></section>
+        <section id="vectors" class="topic-section"></section>
+        <section id="statistics" class="topic-section"></section>
+        <section id="differentiation" class="topic-section"></section>
+        <section id="integration" class="topic-section"></section>
+        <section id="maxmin" class="topic-section"></section>
+        <section id="complex" class="topic-section"></section>
+        <section id="engineering" class="topic-section"></section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
